@@ -1,0 +1,26 @@
+.cellStyle{
+    border: 0.05rem solid black;
+    width:29px;
+    height:29px;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 480px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
