@@ -1,13 +1,14 @@
 .cellStyle{
     border: 0.05rem solid black;
-    width:29px;
-    height:29px;
+    width: 59px;
+    height: 59px;
+    background-color: blue;
 }
 .grid{
     display: flex;
     flex-wrap: wrap;
-    height: 480px;
-    width: 480px;
+    height: 960px;
+    width: 960px;
 }
 
 body{
@@ -24,3 +25,7 @@ body{
     font-size: 32px;
     font-weight: bold;
 }
+
+/*.cellStyle:hover{
+    background-color:tomato;
+}*/
