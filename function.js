@@ -25,6 +25,16 @@ function setGrid(num){
         }
     }
 }
+function pen(){
+    const grid = document.querySelector('#container');
+    let children = grid.children;
+    for(let i = 0; i < children.length; i++){
+        let child = children[i];
+        child.addEventListener('mouseover', function(){
+            this.style.backgroundColor = "black";
+        });   
+    }
+}
 
 function rainbow(){
     const grid = document.querySelector('#container');
@@ -34,6 +44,17 @@ function rainbow(){
         child.addEventListener('mouseover', function(){
             this.style.backgroundColor  = "#" + randomColor();
         });
+    }
+}
+
+function erase(){
+    const grid = document.querySelector('#container');
+    let children = grid.children;
+    for(let i = 0; i < children.length; i++){
+        let child = children[i];
+        child.addEventListener('mouseover', function(){
+            this.style.backgroundColor = "white";
+        });   
     }
 }
 

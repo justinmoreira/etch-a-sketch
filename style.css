@@ -1,6 +1,5 @@
 .cellStyle{
     border: 1px solid black;
-
     background-color: white;
 }
 .grid{
@@ -8,6 +7,7 @@
     flex-wrap: wrap;
     height: 960px;
     width: 960px;
+    border: 3px solid black;
 }
 
 body{
@@ -16,17 +16,31 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-color: yellow;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding-top: 20px;
 }
 
 .head{
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
+    font-size: 64px;
     font-weight: bold;
 }
 
 button{
-    display: flex;
-    justify-content: center;
-
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 24px;
 }

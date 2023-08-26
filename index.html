@@ -8,9 +8,16 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div class = "head">Etch-A-Sketch</div>
+    <div class = "top">
+        <div class = "left">
+            <button onclick = "pen()"> Normal Pen </button>
+            <button onclick = "rainbow()"> Rainbow Mode </button>
+            <button onclick = "erase()"> Eraser </button> 
+        </div>
+        <div class = "head">Etch-A-Sketch</div>
+        <button onclick = "size()"> Grid Size </button>
+    </div>
     <div id = "container"></div>
-    <button onclick = "rainbow()"> Rainbow Mode </button>
-    <button onclick = "size()"> Grid Size </button>
+    
 </body>
 </html>
