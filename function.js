@@ -18,15 +18,27 @@ function setGrid(num){
             cell.style.width = x + "px";
             cell.style.height = x + "px";
             cell.addEventListener('mouseover', function(){
-                this.style.backgroundColor  = "red";
+                this.style.backgroundColor  = "black";
             });
 
             grid.append(cell);
         }
     }
-    
-    
 }
 
+function rainbow(){
+    const grid = document.querySelector('#container');
+    let children = grid.children;
+    for(let i = 0; i < children.length; i++){
+        let child = children[i];
+        child.addEventListener('mouseover', function(){
+            this.style.backgroundColor  = "#" + randomColor();
+        });
+    }
+}
+
+function randomColor(){
+    return Math.floor(Math.random() * 16777215).toString(16);
+}
 setGrid(16);
 
